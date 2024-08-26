@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles1.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div class="tai">
+                <a class = "test" ><img src="https://s12.gifyu.com/images/SodKk.gif" alt="milk and mocha mad" border="0" /></a>
+                <h1 class = "header_text">Kok Gitu :(</h1>
+            </div>
+           
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Gk mw</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">Iya</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "hai3.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
