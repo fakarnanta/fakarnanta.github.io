@@ -22,13 +22,23 @@ body {
 .button {
     background-color: #7d4097;
     color: #fff;
-    border: 2px solid #ccc; /* Adjust the border color and width as needed */
-    border-radius: 12px; /* Adjust the border radius for rounded corners */
+    border: 2px solid #ccc; 
+    border-radius: 12px; 
     padding: 10px 20px;
     cursor: pointer;
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: bold;
   }
+
+@media (max-width: 768px) {
+
+  .header_text {
+    font-size: 32px; 
+  }
+  .button {
+    font-size: 14px; 
+  }
+}
 
 
